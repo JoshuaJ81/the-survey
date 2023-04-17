@@ -1,0 +1,256 @@
+*{
+  
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    line-height: 1.9rem;
+    
+    
+  }
+
+  .question, #first-question, .options, .input, .score {
+    background-color: rgb(53, 120, 197);
+  }
+
+  .nxt-input {
+    
+    display: none;
+  }
+
+  .question h1,
+  .score h1 {
+    font-family: Raleway;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 1.5rem;
+    margin-top: 3.25rem;
+  }
+
+  .question {
+    margin-bottom: -4rem;
+  }
+
+  #first-question h2 {
+    font-family: Raleway;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+  }
+
+  #first-question h3 {
+    font-family: Raleway;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    font-style: italic;
+    
+  }
+
+  .container h4 {
+    margin-bottom: 1rem;
+  }
+
+
+  /*========================================================= seasons ==================================================================*/
+
+  .seasons {
+    background-color: aliceblue;
+    text-transform: uppercase;
+    font-family: Raleway;
+    
+    text-align: center;
+  }
+
+
+  /*============================================================= input & button ======================================================*/
+
+  input {
+    background-color: #fff;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -6rem;
+    display:block;
+   
+  }
+
+ 
+
+  .btn, 
+  .score-btn {
+        
+    font-family: Raleway;	
+    color: #fff;
+    background-color: transparent;
+    opacity: 0.9;
+    transition: 0.3s;
+    border: solid 0.20rem #fff;
+    border-radius: 0px;
+    padding: 0.7rem 2rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 200;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 0.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    display:block;
+    cursor: pointer;
+    
+    
+    
+    }
+
+    .btn:hover,
+    .score-btn:hover {
+      background-color: #fff;
+      border: solid 0.20rem rgb(53, 120, 197);
+      color:rgb(53, 120, 197);
+      opacity: 1;
+      transition: 0.5s;
+    }
+
+    .nxt-btn {
+        
+      font-family: Raleway;	
+      color: #fff;
+      background-color: transparent;
+      display: none;
+      transition: 0.3s;
+      border: solid 0.20rem #fff;
+      border-radius: 0px;
+      padding: 0.7rem 2rem;
+      text-decoration: none;
+      font-size: 1.5rem;
+      font-weight: 200;
+      text-transform: uppercase;
+      text-align: center;
+      margin-top: 0.5rem;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 2rem;
+      cursor: pointer;
+     
+      
+      
+      }
+
+  
+  
+      .nxt-btn:hover {
+        background-color: #fff;
+        border: solid 0.20rem rgb(53, 120, 197);
+        color:rgb(53, 120, 197);
+        opacity: 1;
+        transition: 0.5s;
+        
+      }
+
+
+      a {
+        text-decoration: none;
+      }
+
+
+
+    /*=========================================================== UTILITIES ================================================================*/
+
+    .container {
+      margin-inline: auto;
+      width: min(90%, 50.5rem);
+      
+      }
+
+      .container .seasons {
+        margin-inline: auto;
+        width: min(90%, 50.5rem);
+        
+        }
+  
+  
+      .split {
+        display: flex;
+        flex-direction: column;
+      }
+  
+      header { 
+  
+        padding: 6rem 0;
+        }
+      
+      section {
+        padding: 3rem 0;
+        
+        }
+
+
+
+
+
+
+
+/*================================================================== 12. MEDIA QUERIES =======================================================*/
+
+
+@media (min-width: 40em) {
+  .split {
+    flex-direction: row;
+  }
+  
+  .split > * {
+    flex-basis: 100%;
+  }
+  
+  .split > * + * {
+    margin-left: 2em;
+  }
+  }
+
+  @media (min-width: 40em) {
+    header,
+    section {
+      padding: 7rem 0;
+    }
+    } 
+
+    @media (max-width: 500px) {
+
+      .question h1,
+      .score h1 {
+        font-family: Raleway;
+        text-align: center;
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 1rem;
+        margin-top: 3.25rem;
+      }
+
+      .question h1 {
+        margin-bottom: 3rem;
+      }
+
+      #first-question h2,
+      #first-question h3 {
+        font-size: 1rem;
+      }
+
+      #first-question h3 {
+        margin-bottom: 4rem;
+      }
+
+      .container h4 {
+        font-size: 0.75rem;
+        margin-bottom: 3rem;
+      }
+
+      .btn, .nxt-btn {
+        margin-bottom: 3rem;
+        padding: 0.7rem 0.75rem;
+        font-size: 1.2rem;
+      }
+
+
+    }
